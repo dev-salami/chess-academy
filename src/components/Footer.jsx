@@ -9,7 +9,7 @@ function Footer() {
   return (
     <section id="contact-us" className="grid gap-6 md:grid-cols-4 mb-12 mt-20">
       <div className="flex flex-col gap-6 justify-center items-center">
-        <Image src={logo} height={100} width={100}></Image>
+        <Image alt="Logo" src={logo} height={100} width={100}></Image>
         <div className="gap-4 my-2 flex md:hidden justify-center ">
           <a
             href=""

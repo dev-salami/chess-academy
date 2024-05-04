@@ -40,7 +40,7 @@ function Navbar() {
     <section className="h-full w-full    z-50 ">
       <div className="w-full  h-[130px]"></div>
       <main className=" items-center  fixed top-0 left-0 right-0 bg-white   w-full  py-8 px-8 md:px-4 h-[100px]  flex flex-row justify-between border-b-[1px]  ">
-        <Image src={logo} height={60} width={60}></Image>
+        <Image alt="Logo" src={logo} height={60} width={60}></Image>
 
         <div className="items-center  text-sm mt-3 md:flex flex-row font-semibold space-x-4 hidden">
           {tabs.map((item, index) => (

@@ -17,9 +17,9 @@ function Header() {
           Explore Chess Mastery with Expert Guidance
         </p>
         <p className="text-center">
-          we're a journey from novice to mastery. Join us on the tracks of chess
+          {`  we're a journey from novice to mastery. Join us on the tracks of chess
           excellence as we guide you through every move, every strategy, and
-          every triumph
+          every triumph`}
         </p>
         <button className="px-4 py-3 bg-[#5E5044] text-white rounded-full">
           Learn Now

@@ -45,6 +45,12 @@ function Navbar() {
         <div className="items-center  text-sm mt-3 md:flex flex-row font-semibold space-x-4 hidden">
           {tabs.map((item, index) => (
             <a
+              onClick={() => {
+                if (item.name === "Home") {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+              }}
               key={item.name}
               href={item.link}
               className="transition ease-in-out duration-700  relative px-3 py-1 

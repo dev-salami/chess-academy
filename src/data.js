@@ -4,7 +4,7 @@ import Image from "next/image";
 export const tutors = [
   {
     name: "FIDE Master Akintoye Abdulraheem",
-    links: [{ twitter: "", whatsapp: "", facebook: "", linkedin: "" }],
+    links: [{ instagram: "", facebook: "", linkedin: "", whatsapp: "" }],
     feats: [
       "Nigeria’s Number 3 by FIDE",
       "Winner of the Challenger A category at the Gibraltar Chess Festival 2019",
@@ -24,7 +24,7 @@ export const tutors = [
   },
   {
     name: "Master Oluwadurotimi Lapite",
-    links: [{ twitter: "", whatsapp: "", facebook: "", linkedin: "" }],
+    links: [{ instagram: "", facebook: "", linkedin: "", whatsapp: "" }],
     feats: [
       " Nigeria’s Number 20 by FIDE",
       "Winner of Millionaires Chess Tournament",

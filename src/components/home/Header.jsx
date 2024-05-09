@@ -1,5 +1,7 @@
 import React from "react";
 import headerImage from "../../../public/images/others/header.svg";
+import flags from "../../../public/images/others/flags.svg";
+
 import Image from "next/image";
 
 function Header() {
@@ -25,13 +27,22 @@ function Header() {
           Learn Now
         </button>
       </div>
-      <div className="mx-auto w-fit">
+      <div className="mx-auto mt-10 w-fit flex flex-col-reverse md:flex-row">
         <Image
           alt="headerImage"
           src={headerImage}
-          width={700}
-          height={700}
+          width={500}
+          height={500}
         ></Image>
+        <div className="flex justify-end">
+          <Image
+            className=" w-1/3 md:w-full md:-ml-20 -mb-20 md:mb-60 -z-10 "
+            alt="flags"
+            src={flags}
+            width={200}
+            height={200}
+          ></Image>
+        </div>
       </div>
     </section>
   );

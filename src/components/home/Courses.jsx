@@ -6,7 +6,7 @@ import CourseCard from "../cards/CourseCard";
 function Courses() {
   return (
     <section id="courses" className="bg-[#F5EFE7] pt-16 mt-20">
-      <div className="mx-auto container py-10">
+      <div className="mx-auto container px-5 py-10">
         <p className="text-4xl font-semibold mb-6  text-center">
           Our most popular courses
         </p>

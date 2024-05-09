@@ -4,6 +4,8 @@ import { testimonials } from "@/data";
 import React, { useRef } from "react";
 import TestimonialCard from "../cards/TestimonialCard";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Benjamin from "../../../public/images/others/franklin.svg";
+import Image from "next/image";
 
 function Testimonial() {
   const scrollRef = useRef(null);
@@ -63,6 +65,25 @@ function Testimonial() {
           <TestimonialCard key={index} testimonial={testimonial} />
         ))}
       </main> */}
+      <div className="mt-12 flex flex-col items-center md:flex-row gap-8">
+        <div className="w-full md:text-lg">
+          By playing chess then, we may learn: First: Foresight. Second:
+          circumspection. Third: Caution. And lastly, we learn by chess the
+          habit of not being discouraged by present bad appearances in the state
+          of our affairs, the habit of hoping for a favourable chance, and that
+          of preserving in the secrets of resources.
+        </div>
+        <div className="w-fit px-10 lg:px-20 flex flex-col items-center gap-4 text-lg font-semibold justify-end mt-5">
+          <Image
+            className="border pl-6"
+            alt="Benjamin"
+            src={Benjamin}
+            width={300}
+            height={300}
+          ></Image>
+          <div className=" text-center">{`Benjamin Franklin`}</div>
+        </div>
+      </div>
     </section>
   );
 }

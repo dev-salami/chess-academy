@@ -171,20 +171,20 @@ export const courses = [
       ></Image>
     ),
   },
-  {
-    type: "Advanced",
-    stars: 5,
-    details:
-      "For serious tournament players, our advanced program focuses on high-level strategy, analysis of grandmaster games, complex openings and endgame technique to master competitive play.",
-    image: (
-      <Image
-        src={require(`../public/images/courses/course-advance.svg`)}
-        height={250}
-        alt="course-image"
-        className=" w-full rounded-xl"
-      ></Image>
-    ),
-  },
+  // {
+  //   type: "Advanced",
+  //   stars: 5,
+  //   details:
+  //     "For serious tournament players, our advanced program focuses on high-level strategy, analysis of grandmaster games, complex openings and endgame technique to master competitive play.",
+  //   image: (
+  //     <Image
+  //       src={require(`../public/images/courses/course-advance.svg`)}
+  //       height={250}
+  //       alt="course-image"
+  //       className=" w-full rounded-xl"
+  //     ></Image>
+  //   ),
+  // },
   {
     type: "Elite",
     stars: 5,
@@ -199,34 +199,34 @@ export const courses = [
       ></Image>
     ),
   },
-  {
-    type: "Youth",
-    stars: 5,
-    details:
-      "The moving train chess academy offers fun, engaging chess lessons for kids and teens of all levels. Young students will learn openings, tactics, principles and theory from expert youth coaches",
-    image: (
-      <Image
-        src={require(`../public/images/courses/course-youth.svg`)}
-        height={250}
-        alt="course-image"
-        className=" w-full rounded-xl"
-      ></Image>
-    ),
-  },
-  {
-    type: "Private",
-    stars: 5,
-    details:
-      "For personalized one-on-one instruction, private chess lessons allow students to learn at their own pace from accomplished coaches tailored to their goals and ability.",
-    image: (
-      <Image
-        src={require(`../public/images/courses/course-private.svg`)}
-        height={250}
-        alt="course-image"
-        className=" w-full rounded-xl"
-      ></Image>
-    ),
-  },
+  // {
+  //   type: "Youth",
+  //   stars: 5,
+  //   details:
+  //     "The moving train chess academy offers fun, engaging chess lessons for kids and teens of all levels. Young students will learn openings, tactics, principles and theory from expert youth coaches",
+  //   image: (
+  //     <Image
+  //       src={require(`../public/images/courses/course-youth.svg`)}
+  //       height={250}
+  //       alt="course-image"
+  //       className=" w-full rounded-xl"
+  //     ></Image>
+  //   ),
+  // },
+  // {
+  //   type: "Private",
+  //   stars: 5,
+  //   details:
+  //     "For personalized one-on-one instruction, private chess lessons allow students to learn at their own pace from accomplished coaches tailored to their goals and ability.",
+  //   image: (
+  //     <Image
+  //       src={require(`../public/images/courses/course-private.svg`)}
+  //       height={250}
+  //       alt="course-image"
+  //       className=" w-full rounded-xl"
+  //     ></Image>
+  //   ),
+  // },
 ];
 export const testimonials = [
   {

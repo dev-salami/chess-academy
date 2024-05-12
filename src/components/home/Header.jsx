@@ -16,7 +16,8 @@ function Header() {
           <span className="text-md">Online Chess Academy</span>
         </p>
         <p className="text-4xl sm:text-6xl text-center font-bold">
-          Explore Chess Mastery with Expert Guidance
+          We take Special Delight in preparing our Students for greatness. No
+          excuses{" "}
         </p>
         <p className="text-center">
           {`  we're a journey from novice to mastery. Join us on the tracks of chess
@@ -36,7 +37,7 @@ function Header() {
         ></Image>
         <div className="flex justify-end">
           <Image
-            className=" w-1/3 md:w-full md:-ml-20 -mb-20 md:mb-60 -z-10 "
+            className="bg-gray-400 h-fit p-3 rounded-xl my-auto w-1/3 md:w-full md:-ml-20 ml-10 -mb-40 md:mb-96 ju -z-10 "
             alt="flags"
             src={flags}
             width={200}

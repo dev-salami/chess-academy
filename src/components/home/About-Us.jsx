@@ -13,7 +13,7 @@ function AboutUs() {
   return (
     <section id="about-us" className="text-center container mx-auto px-6 pt-40">
       <p className="text-4xl font-semibold ">About Us</p>
-      <p className=" my-6">
+      <p className=" my-6 max-w-screen-lg px-6 text-lg mx-auto">
         The Moving Train Online Academy offers top-notch chess education,
         fostering lifelong passion and skills. Our expert instruction cultivates
         strategic thinking, problem-solving, and sportsmanship to prepare

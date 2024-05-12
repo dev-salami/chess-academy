@@ -16,7 +16,7 @@ function Testimonial() {
   return (
     <section
       id="testimonial"
-      className="max-w-[1536px] mx-auto px-10 py-20 mt-28 bg-[#F5EFE7]"
+      className="max-w-[1536px]  mx-auto px-6  md:p-20 mt-28 bg-[#F5EFE7]"
     >
       <div className="flex justify-between">
         <div></div>

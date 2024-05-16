@@ -103,7 +103,7 @@ function Navbar() {
               Open ? "bg-white " : " bg-white -translate-x-full "
             }`}
           >
-            <div className="flex flex-col justify-evenly h-full items-center text-lg gap-6 text-gray-500 font-semibold leading-tight ">
+            <div className="flex flex-col  h-full items-center text-lg gap-12 mt-6 text-gray-500 font-semibold leading-tight ">
               {tabs.map((item, index) => (
                 <a
                   onClick={() => {

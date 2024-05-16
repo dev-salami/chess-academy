@@ -37,7 +37,7 @@ function Header() {
         ></Image>
         <div className="flex justify-end">
           <Image
-            className="bg-gray-400 h-fit p-3 rounded-xl my-auto w-1/3 md:w-full md:-ml-20 ml-10 -mb-40 md:mb-96 ju -z-10 "
+            className="bg-[#5D5B58]/25 h-fit p-5 shadow-md shadow-[#5D5B58]/50 rounded-xl my-auto w-1/3 md:w-full md:-ml-20 ml-10 -mb-40 md:mb-96 ju -z-10 "
             alt="flags"
             src={flags}
             width={200}

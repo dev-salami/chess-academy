@@ -6,6 +6,7 @@ export const tutors = [
     name: "FIDE Master Akintoye Abdulraheem",
     links: [{ instagram: "", facebook: "", linkedin: "", whatsapp: "" }],
     feats: [
+      "West African Chess champion",
       "Nigeria’s Number 3 by FIDE",
       "Winner of the Challenger A category at the Gibraltar Chess Festival 2019",
       "Winner of the CPAN C4 Chevron Chess Challenge 2018",
@@ -26,7 +27,7 @@ export const tutors = [
     name: "Master Oluwadurotimi Lapite",
     links: [{ instagram: "", facebook: "", linkedin: "", whatsapp: "" }],
     feats: [
-      " Nigeria’s Number 20 by FIDE",
+      " Nigeria’s Number 11 by FIDE",
       "Winner of Millionaires Chess Tournament",
       "Winner of Awesome Classical Tournament 2022",
       "Winner of the President’s Cup, Ghana 2019",

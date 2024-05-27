@@ -69,9 +69,12 @@ function Navbar() {
             </a>
           ))}
         </div>
-        <button className="px-4 py-3 border-[#5E5044] border text-[#5E5044] rounded-full">
+        <a
+          href="https://wa.link/uj48gk"
+          className="px-4 py-3 border-[#5E5044] border text-[#5E5044] rounded-full"
+        >
           Sign Up Now!
-        </button>
+        </a>
         <div className=" flex md:hidden gap-6 h-fit ">
           <button
             onClick={handleClick}

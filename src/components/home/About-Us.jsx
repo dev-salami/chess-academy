@@ -19,9 +19,12 @@ function AboutUs() {
         strategic thinking, problem-solving, and sportsmanship to prepare
         players for success in chess and life.
       </p>
-      <button className="px-4 py-3 mb-10 bg-[#5E5044] text-white rounded-full">
+      <a
+        href="https://wa.link/uj48gk"
+        className="px-4 py-3 mb-10 bg-[#5E5044] text-white rounded-full"
+      >
         Learn Now
-      </button>
+      </a>
       <div>
         <div className="flex justify-center w-full ">
           <Image

@@ -24,9 +24,12 @@ function Header() {
           excellence as we guide you through every move, every strategy, and
           every triumph`}
         </p>
-        <button className="px-4 py-3 bg-[#5E5044] text-white rounded-full">
+        <a
+          href="https://wa.link/uj48gk"
+          className="px-4 py-3 bg-[#5E5044] text-white rounded-full"
+        >
           Learn Now
-        </button>
+        </a>
       </div>
       <div className="mx-auto mt-10 w-fit flex flex-col-reverse md:flex-row">
         <Image

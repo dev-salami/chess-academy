@@ -20,10 +20,10 @@ function CourseCard({ course }) {
           </div>
         </div>
         <p className=" text-xs md:text-sm my-2 ">{course.details}</p>
-        <button className="flex gap-2 items-center">
+        <a href={course.link} className="flex gap-2 items-center">
           <span className="text-sm font-semibold">Apply Now</span>
           <FaArrowRightLong size={20} />
-        </button>
+        </a>
       </div>
     </div>
   );

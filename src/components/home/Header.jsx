@@ -9,21 +9,18 @@ function Header() {
     <section className="container mx-auto px-6 ">
       <div className="flex gap-3 sm:gap-5 flex-col justify-center items-center">
         <p>
-          <span className="text-xl  sm:text-2xl font-semibold">
-            The Moving Train
-          </span>{" "}
-          <br />
-          <span className="text-md">Online Chess Academy</span>
+          <p className="text-3xl text-center sm:text-5xl font-semibold">
+            The Moving Train <br /> Online Chess Academy
+          </p>{" "}
         </p>
-        <p className="text-4xl sm:text-6xl text-center font-bold">
+        <p className="text-lg sm:text-xl  text-center ">
           We take Special Delight in preparing our Students for greatness. No
-          excuses{" "}
-        </p>
-        <p className="text-center">
+          excuses <br />
           {`  we're a journey from novice to mastery. Join us on the tracks of chess
           excellence as we guide you through every move, every strategy, and
           every triumph`}
         </p>
+        <p className="text-center"></p>
         <a
           href="https://wa.link/uj48gk"
           className="px-4 py-3 bg-[#5E5044] text-white rounded-full"

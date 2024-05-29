@@ -37,9 +37,8 @@ export const tutors = [
     image: (
       <Image
         src={require(`../public/images/others/tutor2.svg`)}
-        height={200}
         alt="tutor"
-        className=" w-full rounded-xl"
+        className=" w-full h-auto rounded-xl"
       ></Image>
     ),
   },
@@ -47,7 +46,7 @@ export const tutors = [
 export const events = [
   {
     name: "Victor Nwankwo",
-    details: "Award winning Junior Chess player of the year 2023",
+    details: "Under 14 National champion",
     image: (
       <Image
         src={require(`../public/images/event/eventPic1.svg`)}
@@ -58,94 +57,93 @@ export const events = [
     ),
   },
   {
-    name: "Victor Nwankwo",
-    details: "Award winning Junior Chess player of the year 2023",
+    name: "Danielle Unuigboje",
+    details:
+      "Danielle Unuigboje with Mr Kunle Kasunmu, President OLCC chess club",
     image: (
       <Image
-        src={require(`../public/images/event/eventPic2.svg`)}
-        height={100}
+        src={require(`../public/images/recent/danielle-min.jpg`)}
+        // height={100}
         alt="eventPicture"
-        className=" w-full rounded-xl"
+        className=" w-full h-auto rounded-full"
+      ></Image>
+    ),
+  },
+  {
+    name: "Gabrielle Unuigboje",
+    details: "Chess player",
+    image: (
+      <Image
+        src={require(`../public/images/recent/gabrielle-min.jpg`)}
+        alt="eventPicture"
+        className=" w-full h-auto rounded-full"
+      ></Image>
+    ),
+  },
+  {
+    name: "Imtiyaz Sorunke",
+    details: " Chess player ",
+    image: (
+      <Image
+        src={require(`../public/images/recent/imtiyaz-min.jpg`)}
+        alt="eventPicture"
+        className=" w-full rounded-full"
+      ></Image>
+    ),
+  },
+  {
+    name: "Chidubem Nwankwo",
+    details: "Chess player ",
+    image: (
+      <Image
+        src={require(`../public/images/recent/jas-nwak-min.jpg`)}
+        alt="eventPicture"
+        className=" w-full rounded-full"
       ></Image>
     ),
   },
   {
     name: "Victor Nwankwo",
-    details: "Award winning Junior Chess player of the year 2023",
+    details: "Chess player ",
     image: (
       <Image
-        src={require(`../public/images/event/eventPic3.svg`)}
-        height={100}
+        src={require(`../public/images/recent/chidubem-min.jpg`)}
         alt="eventPicture"
-        className=" w-full rounded-xl"
+        className=" w-full rounded-full"
       ></Image>
     ),
   },
-  {
-    name: "Victor Nwankwo",
-    details: "Award winning Junior Chess player of the year 2023",
-    image: (
-      <Image
-        src={require(`../public/images/event/eventPic4.svg`)}
-        height={100}
-        alt="eventPicture"
-        className=" w-full rounded-xl"
-      ></Image>
-    ),
-  },
-  {
-    name: "Victor Nwankwo",
-    details: "Award winning Junior Chess player of the year 2023",
-    image: (
-      <Image
-        src={require(`../public/images/event/eventPic5.svg`)}
-        height={100}
-        alt="eventPicture"
-        className=" w-full rounded-xl"
-      ></Image>
-    ),
-  },
-  {
-    name: "Victor Nwankwo",
-    details: "Award winning Junior Chess player of the year 2023",
-    image: (
-      <Image
-        src={require(`../public/images/event/eventPic6.svg`)}
-        height={100}
-        alt="eventPicture"
-        className=" w-full rounded-xl"
-      ></Image>
-    ),
-  },
-  {
-    name: "Victor Nwankwo",
-    details: "Award winning Junior Chess player of the year 2023",
-    image: (
-      <Image
-        src={require(`../public/images/event/eventPic7.svg`)}
-        height={100}
-        alt="eventPicture"
-        className=" w-full rounded-xl"
-      ></Image>
-    ),
-  },
-  {
-    name: "Victor Nwankwo",
-    details: "Award winning Junior Chess player of the year 2023",
-    image: (
-      <Image
-        src={require(`../public/images/event/eventPic8.svg`)}
-        height={100}
-        alt="eventPicture"
-        className=" w-full rounded-xl"
-      ></Image>
-    ),
-  },
+  // {
+  //   name: "Victor Nwankwo",
+  //   details: "Award winning Junior Chess player of the year 2023",
+  //   image: (
+  //     <Image
+  //       src={require(`../public/images/david-enme.jpeg`)}
+  //       height={100}
+  //       alt="eventPicture"
+  //       className=" w-full rounded-full"
+  //     ></Image>
+  //   ),
+  // },
+  // {
+  //   name: "Danielle Unuigboje",
+  //   details:
+  //     "Danielle Unuigboje with Mr Kunle Kasunmu, President OLCC chess club",
+  //   image: (
+  //     <Image
+  //       src={require(`../public/images/danielle.jpeg`)}
+  //       height={80}
+  //       alt="eventPicture"
+  //       className=" w-full rounded-full"
+  //     ></Image>
+  //   ),
+  // },
 ];
 export const courses = [
   {
     type: "Beginner",
     stars: 5,
+    link: "https://wa.link/8eeib2",
     details:
       "Our beginner chess program teaches the rules, basic principles, and fundamentals to new students. Learn openings, tactics, strategy and more from expert coaches.",
     imagePath: "course-beginner",
@@ -161,6 +159,7 @@ export const courses = [
   {
     type: "Intermediate",
     stars: 5,
+    link: "https://wa.link/rphgnm",
     details:
       "Take your game to the next level with our intermediate training. Classes cover advanced tactics, positional play, endgames and complex openings to step up your skills.",
     image: (
@@ -172,23 +171,11 @@ export const courses = [
       ></Image>
     ),
   },
-  // {
-  //   type: "Advanced",
-  //   stars: 5,
-  //   details:
-  //     "For serious tournament players, our advanced program focuses on high-level strategy, analysis of grandmaster games, complex openings and endgame technique to master competitive play.",
-  //   image: (
-  //     <Image
-  //       src={require(`../public/images/courses/course-advance.svg`)}
-  //       height={250}
-  //       alt="course-image"
-  //       className=" w-full rounded-xl"
-  //     ></Image>
-  //   ),
-  // },
+
   {
     type: "Elite",
     stars: 5,
+    link: "https://wa.link/w90b5d",
     details:
       "Our elite training is tailored for committed students pursuing a career in competitive chess. Learn from international master and grandmaster coaches to take your game to the master level.",
     image: (
@@ -200,34 +187,6 @@ export const courses = [
       ></Image>
     ),
   },
-  // {
-  //   type: "Youth",
-  //   stars: 5,
-  //   details:
-  //     "The moving train chess academy offers fun, engaging chess lessons for kids and teens of all levels. Young students will learn openings, tactics, principles and theory from expert youth coaches",
-  //   image: (
-  //     <Image
-  //       src={require(`../public/images/courses/course-youth.svg`)}
-  //       height={250}
-  //       alt="course-image"
-  //       className=" w-full rounded-xl"
-  //     ></Image>
-  //   ),
-  // },
-  // {
-  //   type: "Private",
-  //   stars: 5,
-  //   details:
-  //     "For personalized one-on-one instruction, private chess lessons allow students to learn at their own pace from accomplished coaches tailored to their goals and ability.",
-  //   image: (
-  //     <Image
-  //       src={require(`../public/images/courses/course-private.svg`)}
-  //       height={250}
-  //       alt="course-image"
-  //       className=" w-full rounded-xl"
-  //     ></Image>
-  //   ),
-  // },
 ];
 export const testimonials = [
   {
@@ -236,8 +195,8 @@ export const testimonials = [
     text: "The online chess class boosted my strategy understanding and confidence with expert instruction and clear explanations. It's a game-changer!",
     image: (
       <Image
-        src={require(`../public/images/others/testimonial1.svg`)}
-        height={20}
+        src={require(`../public/images/recent/vic-nwak-min.jpg`)}
+        height={40}
         alt="testimonial-image"
         className=" w-full rounded-full"
       ></Image>
@@ -268,38 +227,5 @@ export const testimonials = [
         className=" w-full rounded-xl"
       ></Image>
     ),
-  },
-];
-
-export const orders = [
-  {
-    name: "Marcus Bergos",
-    date: "Nov 15, 2023",
-    amount: "$80,000",
-    status: "Paid",
-  },
-  {
-    name: "Jaydon Vaccaro",
-    date: "Nov 15, 2023",
-    amount: "$150,000",
-    status: "Refund",
-  },
-  {
-    name: "Corey Schleifer",
-    date: "Nov 14, 2023",
-    amount: "$87,000",
-    status: "Refund",
-  },
-  {
-    name: "Cooper Press",
-    date: "Nov 14, 2023",
-    amount: "$100,000",
-    status: "Paid",
-  },
-  {
-    name: "Philip Lubin",
-    date: "Nov 14, 2023",
-    amount: "$78,000",
-    status: "Paid",
   },
 ];

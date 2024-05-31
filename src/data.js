@@ -71,7 +71,7 @@ export const events = [
   },
   {
     name: "Gabrielle Unuigboje",
-    details: "Chess player",
+    details: "",
     image: (
       <Image
         src={require(`../public/images/recent/gabrielle-min.jpg`)}
@@ -82,7 +82,7 @@ export const events = [
   },
   {
     name: "Imtiyaz Sorunke",
-    details: " Chess player ",
+    details: "",
     image: (
       <Image
         src={require(`../public/images/recent/imtiyaz-min.jpg`)}
@@ -92,8 +92,8 @@ export const events = [
     ),
   },
   {
-    name: "Chidubem Nwankwo",
-    details: "Chess player ",
+    name: "Jason Nwankwo",
+    details: "",
     image: (
       <Image
         src={require(`../public/images/recent/jas-nwak-min.jpg`)}
@@ -103,8 +103,8 @@ export const events = [
     ),
   },
   {
-    name: "Victor Nwankwo",
-    details: "Chess player ",
+    name: "Chidubem Nwankwo",
+    details: "",
     image: (
       <Image
         src={require(`../public/images/recent/chidubem-min.jpg`)}
@@ -113,18 +113,18 @@ export const events = [
       ></Image>
     ),
   },
-  // {
-  //   name: "Victor Nwankwo",
-  //   details: "Award winning Junior Chess player of the year 2023",
-  //   image: (
-  //     <Image
-  //       src={require(`../public/images/david-enme.jpeg`)}
-  //       height={100}
-  //       alt="eventPicture"
-  //       className=" w-full rounded-full"
-  //     ></Image>
-  //   ),
-  // },
+  {
+    name: "David Enmechukwu",
+    details: "Award winning Junior Chess player of the year 2023",
+    image: (
+      <Image
+        src={require(`../public/images/david-enme.jpeg`)}
+        height={100}
+        alt="eventPicture"
+        className=" w-full rounded-full"
+      ></Image>
+    ),
+  },
   // {
   //   name: "Danielle Unuigboje",
   //   details:

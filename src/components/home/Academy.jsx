@@ -15,6 +15,10 @@ import academyPic13 from "../../../public/images/academy/academyPic13.svg";
 import academyPic14 from "../../../public/images/academy/academyPic14.svg";
 import academyPic15 from "../../../public/images/academy/academyPic15.svg";
 import academyPic16 from "../../../public/images/academy/academyPic16.svg";
+import masterRaheem1 from "../../../public/images/master-raheem.jpeg";
+import masterRaheem2 from "../../../public/images/master-win.jpeg";
+import masterRaheem3 from "../../../public/images/vscrv.jpeg";
+
 import Image from "next/image";
 
 function Academy() {
@@ -133,6 +137,27 @@ function Academy() {
             className="rounded-full "
             src={academyPic16}
             width={70}
+            height={70}
+          ></Image>
+          <Image
+            alt="academyPic"
+            className="rounded-full "
+            src={masterRaheem1}
+            width={70}
+            height={70}
+          ></Image>
+          <Image
+            alt="academyPic"
+            className="rounded-full "
+            src={masterRaheem2}
+            width={140}
+            height={70}
+          ></Image>
+          <Image
+            alt="academyPic"
+            className="rounded-full "
+            src={masterRaheem3}
+            width={140}
             height={70}
           ></Image>
         </main>

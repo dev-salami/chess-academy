@@ -12,9 +12,12 @@ function Footer() {
         <p className="text-3xl font-semibold text-center">
           Contact us today to <br /> join our academy.{" "}
         </p>
-        <button className="px-8 py-3 bg-[#5E5044] text-white rounded-full">
+        <a
+          href="https://wa.link/uj48gk"
+          className="px-8 py-3 bg-[#5E5044] text-white rounded-full"
+        >
           Contact Us
-        </button>{" "}
+        </a>{" "}
       </div>
       <div className="bg-[#F5EFE7] pt-20">
         <div className="grid gap-6 md:grid-cols-4 mb-12 ">

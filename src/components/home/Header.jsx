@@ -8,10 +8,8 @@ function Header() {
   return (
     <section className="container mx-auto px-6 ">
       <div className="flex gap-3 sm:gap-5 flex-col justify-center items-center">
-        <p>
-          <p className="text-3xl text-center sm:text-5xl font-semibold">
-            The Moving Train <br /> Online Chess Academy
-          </p>{" "}
+        <p className="text-3xl text-center sm:text-5xl font-semibold">
+          The Moving Train <br /> Online Chess Academy
         </p>
         <p className="text-lg sm:text-xl  text-center ">
           We take Special Delight in preparing our Students for greatness. No

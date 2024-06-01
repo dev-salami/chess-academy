@@ -18,6 +18,8 @@ import academyPic16 from "../../../public/images/academy/academyPic16.svg";
 import masterRaheem1 from "../../../public/images/master-raheem.jpeg";
 import masterRaheem2 from "../../../public/images/master-win.jpeg";
 import masterRaheem3 from "../../../public/images/vscrv.jpeg";
+import chessplayer1 from "../../../public/images/pic1.jpg";
+import chessplayer2 from "../../../public/images/pic2.jpg";
 
 import Image from "next/image";
 
@@ -158,6 +160,20 @@ function Academy() {
             className="rounded-full "
             src={masterRaheem3}
             width={140}
+            height={70}
+          ></Image>
+          <Image
+            alt="academyPic"
+            className="rounded-full "
+            src={chessplayer1}
+            width={80}
+            height={70}
+          ></Image>
+          <Image
+            alt="academyPic"
+            className="rounded-full "
+            src={chessplayer2}
+            width={100}
             height={70}
           ></Image>
         </main>

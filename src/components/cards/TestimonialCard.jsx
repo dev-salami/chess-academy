@@ -3,7 +3,7 @@ import React from "react";
 
 function TestimonialCard({ testimonial }) {
   return (
-    <div className="shadow-md shadow-gray-700 border border-gray-400 p-4 rounded-xl">
+    <div className="shadow-md shadow-gray-700 border border-gray-400  p-4 rounded-xl">
       <div className="flex items-center gap-2">
         <div>{testimonial.image}</div>
         <div>
@@ -11,7 +11,9 @@ function TestimonialCard({ testimonial }) {
           <p>{testimonial.title}</p>
         </div>
       </div>
-      <p className="mt-4">{truncateText(testimonial.text, 300)}</p>
+      <p className="mt-4 text-sm min-h-40">
+        {truncateText(testimonial.text, 800)}
+      </p>
     </div>
   );
 }

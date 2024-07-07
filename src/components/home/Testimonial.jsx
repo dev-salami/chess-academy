@@ -6,6 +6,13 @@ import TestimonialCard from "../cards/TestimonialCard";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Benjamin from "../../../public/images/others/franklin.svg";
 import Image from "next/image";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../ui/carousel";
 
 function Testimonial() {
   const scrollRef = useRef(null);
@@ -24,7 +31,7 @@ function Testimonial() {
           Testimonials
         </p>
         <div className="flex gap-5">
-          <button
+          {/* <button
             onClick={() => handleScroll(-200)}
             className="text-[#5E5044] hover:bg-[#5E5044] hover:text-white duration-500 rounded-full border h-10 w-10 border-[#5E5044] flex items-center justify-center "
           >
@@ -35,36 +42,24 @@ function Testimonial() {
             className="text-[#5E5044] hover:bg-[#5E5044] hover:text-white duration-500 rounded-full border h-10 w-10 border-[#5E5044] flex items-center justify-center "
           >
             <FaChevronRight size={20} />
-          </button>
+          </button> */}
         </div>
       </div>
-      <div
-        ref={scrollRef}
-        className=" gap-6 flex md:grid md:grid-cols-3 overflow-x-auto  duration-500  rounded-md"
-        // style={{ scrollbarWidth: "none" }}
-        style={{ scrollbarWidth: "none", scrollBehavior: "smooth" }}
-      >
-        {/* Your content here */}
-        {testimonials.map((testimonial, index) => (
-          <div
-            key={index}
-            className="min-w-60 w-fit mb-4 text-sm lg:text-base flex-none"
-          >
-            <TestimonialCard testimonial={testimonial} />
-          </div>
-        ))}
-        {/* {Array.from({ length: 10 }, (_, index) => (
-          <div key={index} className="flex-none w-64 h-32 bg-blue-200">
-            {`Item ${index + 1}`}
-          </div>
-        ))} */}
-      </div>
+      <Carousel>
+        <CarouselPrevious className="bg-[#5E5044] text-white" />
+        <CarouselNext className="bg-[#5E5044] text-white" />
+        <CarouselContent className="py-4">
+          {testimonials.map((testimonial, index) => (
+            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+              <TestimonialCard testimonial={testimonial} />
+            </CarouselItem>
+          ))}
 
-      {/* <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
-        {testimonials.map((testimonial, index) => (
-          <TestimonialCard key={index} testimonial={testimonial} />
-        ))}
-      </main> */}
+          {/* <CarouselItem className="md:basis-1/2 lg:basis-1/3">...</CarouselItem>
+          <CarouselItem className="md:basis-1/2 lg:basis-1/3">...</CarouselItem> */}
+        </CarouselContent>
+      </Carousel>
+
       <div className="mt-12 flex flex-col items-center md:flex-row gap-8">
         <div className="w-full md:text-lg">
           By playing chess then, we may learn: First: Foresight. Second:

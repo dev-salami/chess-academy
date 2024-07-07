@@ -203,6 +203,13 @@ export const testimonials = [
     ),
   },
   {
+    name: "Mr Enmechukwu ",
+    title: "David's Dad",
+    text: `I cannot recommend the Moving Train Chess Academy highly enough for anyone looking to improve their chess skills, especially young learners. My son has been attending classes for several months, and the progress has been remarkable. When we first enrolled, my son had a basic understanding of the game but lacked the skills and strategies to compete at a higher level. His progress has been closely monitored, and the feedback has been instrumental in his rapid improvement. Today, he proudly holds several trophies and medals, a testament to the quality of instruction and support at the Moving Train Chess Academy. I am deeply grateful to the entire team for their commitment to fostering a love for chess and helping my son achieve his potential.`,
+    image: "",
+  },
+
+  {
     name: "Madamori Oloruntobi",
     title: "1892 FIDE Rating",
     text: "During the lockdown, I saw a flyer about online classes to mastering chess with FIDE Master Abdulrahman A. Akintoye. The classes were powerful and eye-opening. With every session, I learnt something new. On some days we studied openings, middlegames, and popular endgames. On other days we analyzed my games with some strong players and solved some masters puzzles on tactics. Chess got easier and more interesting for me simply because I was already playing like a master in less than a month. It was no surprise when I participated in my first ever masters category chess tournament and did well",
@@ -219,7 +226,7 @@ export const testimonials = [
   {
     name: "Fadhlullah AbdulRaheem",
     title: "OLCC Master chess player",
-    text: "“I used to think that maybe chess wasn't for me because I could never really understand what was happening in the game, even after understanding how the pieces moved. Training with coach AbdulRahman these past few months have changed my view drastically and made me feel like, soon enough, I'll be going to competitions. My rating, which was roughly 1000 is now 1800+. I believe his explanations and the way he made me start looking at chess has helped me greatly”",
+    text: `I used to think that maybe chess wasn't for me because I could never really understand what was happening in the game, even after understanding how the pieces moved. Training with coach AbdulRahman these past few months have changed my view drastically and made me feel like, soon enough, I'll be going to competitions. My rating, which was roughly 1000 is now 1800+. I believe his explanations and the way he made me start looking at chess has helped me greatly`,
     image: "",
     //  (
     //   <Image

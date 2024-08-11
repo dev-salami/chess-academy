@@ -125,6 +125,18 @@ export const events = [
       ></Image>
     ),
   },
+  {
+    name: "Chiamaka Nwankwo",
+    details: "",
+    image: (
+      <Image
+        src={require(`../public/images/chi-nwak.jpg`)}
+        height={100}
+        alt="eventPicture"
+        className=" w-full rounded-full"
+      ></Image>
+    ),
+  },
   // {
   //   name: "Danielle Unuigboje",
   //   details:

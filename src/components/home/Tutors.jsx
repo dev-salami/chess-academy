@@ -5,7 +5,7 @@ import TutorCard from "../cards/TutorCard";
 
 function Tutors() {
   return (
-    <section className="pt-32" id="tutors">
+    <section className=" ">
       <p className="text-4xl font-semibold mb-10  text-center">
         Meet Our Team Leaders
       </p>

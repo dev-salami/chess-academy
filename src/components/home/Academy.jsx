@@ -25,7 +25,7 @@ import Image from "next/image";
 
 function Academy() {
   return (
-    <section id="academy" className="bg-[#F5EFE7] my-14">
+    <section id="academy" className="bg-[#F5EFE7] mt-14">
       <div className="mx-auto container py-10">
         <p className="text-4xl font-semibold mb-6  text-center">Our Academy</p>
         <main className="flex flex-wrap justify-center gap-x-6 gap-y-8 p-6  md:grid-cols-3">

@@ -12,7 +12,7 @@ function TestimonialCard({ testimonial }) {
         </div>
       </div>
       <p className="mt-4 text-sm min-h-40">
-        {truncateText(testimonial.text, 800)}
+        {truncateText(testimonial.text, 500)}
       </p>
     </div>
   );

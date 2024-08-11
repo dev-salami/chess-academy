@@ -26,13 +26,13 @@ function Navbar() {
     }
   };
   const tabs = [
-    { link: "#/", name: "Home" },
-    { link: "#about-us", name: "About Us" },
-    { link: "#courses", name: "Courses" },
-    { link: "#tutors", name: "Tutors" },
+    { link: "/#", name: "Home" },
+    { link: "/#about-us", name: "About Us" },
+    { link: "/courses", name: "Courses" },
+    { link: "/tutors", name: "Tutors" },
 
-    { link: "#events", name: "Event" },
-    { link: "#contact-us", name: "Contact Us" },
+    { link: "/gallery", name: "Gallery" },
+    { link: "/#contact-us", name: "Contact Us" },
   ];
   const isActive = (pathname) => router.pathname === pathname;
 

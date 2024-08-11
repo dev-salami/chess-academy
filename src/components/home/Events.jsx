@@ -5,7 +5,7 @@ import EventCard from "../cards/EventCard";
 
 function Events() {
   return (
-    <section id="events" className="container mx-auto px-6 pt-20">
+    <section id="events" className="container mx-auto px-6  ">
       <p className="text-4xl font-semibold my-8  text-center">
         News and Events{" "}
       </p>

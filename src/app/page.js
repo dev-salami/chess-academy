@@ -39,11 +39,9 @@ export default function Home() {
       <Navbar />
       <Header />
       <AboutUs />
-      <Courses />
-      <Tutors />
+
       <Testimonial />
-      <Events />
-      <Academy />
+
       <Footer />
     </div>
   );

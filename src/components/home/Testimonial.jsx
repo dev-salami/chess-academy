@@ -23,7 +23,7 @@ function Testimonial() {
   return (
     <section
       id="testimonial"
-      className="max-w-[1536px]  mx-auto px-6 p-10 md:p-20 mt-28 bg-[#F5EFE7]"
+      className="max-w-[1240px]  mx-auto px-6 p-10 md:p-20 mt-28 bg-[#F5EFE7]"
     >
       <div className="flex justify-between">
         <div></div>
@@ -45,12 +45,17 @@ function Testimonial() {
           </button> */}
         </div>
       </div>
-      <Carousel>
-        <CarouselPrevious className="bg-[#5E5044] text-white" />
-        <CarouselNext className="bg-[#5E5044] text-white" />
-        <CarouselContent className="py-4">
+      <Carousel className=" max-w-xs sm3:max-w-md mx-auto md:max-w-screen-xl">
+        <div className="relative max-w-4 pb-12 mx-auto">
+          <CarouselPrevious className="bg-[#5E5044] text-white" />
+          <CarouselNext className="bg-[#5E5044] text-white" />
+        </div>
+        <CarouselContent className="py-4 hfi">
           {testimonials.map((testimonial, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem
+              key={index}
+              className="basis-full md:basis-1/2 lg:basis-1/3"
+            >
               <TestimonialCard testimonial={testimonial} />
             </CarouselItem>
           ))}

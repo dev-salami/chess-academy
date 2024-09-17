@@ -13,7 +13,7 @@ function Header() {
         </p>
         <p className="text-lg sm:text-xl  text-center ">
           We take Special Delight in preparing our Students for greatness. No
-          excuses! <br />
+          excuses!!! <br />
           {`  We're a journey from novice to mastery. Join us on the tracks of chess
           excellence as we guide you through every move, every strategy, and
           every triumph.`}

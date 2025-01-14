@@ -91,7 +91,7 @@ export const events = [
       "Chiamaka Nwankwo was second in the women's invitational section. An astounding result",
     image: (
       <Image
-        src={require(`../public/images/Chiamaka_3.jpg`)}
+        src={require(`../public/images/chiamaka_3.jpg`)}
         // height={100}
         alt="eventPicture"
         className=" w-full h-auto rounded-full"

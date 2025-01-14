@@ -63,7 +63,7 @@ export const events = [
       "Chiamaka in action at the National championship 2024 invitational female category",
     image: (
       <Image
-        src={require(`../public/images/recent/chiamaka.jpg`)}
+        src={require(`../public/images/chiamaka.jpg`)}
         // height={100}
         alt="eventPicture"
         className=" w-full h-auto rounded-full"
@@ -77,7 +77,7 @@ export const events = [
       "",
     image: (
       <Image
-        src={require(`../public/images/recent/coach_mikey.jpg`)}
+        src={require(`../public/images/coach_mikey.jpg`)}
         // height={100}
         alt="eventPicture"
         className=" w-full h-auto rounded-full"
@@ -91,7 +91,7 @@ export const events = [
       "Chiamaka Nwankwo was second in the women's invitational section. An astounding result",
     image: (
       <Image
-        src={require(`../public/images/recent/Chiamaka_3.jpg`)}
+        src={require(`../public/images/Chiamaka_3.jpg`)}
         // height={100}
         alt="eventPicture"
         className=" w-full h-auto rounded-full"
@@ -105,7 +105,7 @@ export const events = [
       "",
     image: (
       <Image
-        src={require(`../public/images/recent/triple_a.jpg`)}
+        src={require(`../public/images/triple_a.jpg`)}
         // height={100}
         alt="eventPicture"
         className=" w-full h-auto rounded-full"
@@ -119,7 +119,7 @@ export const events = [
       "Coach AAA with Chiamaka and Jason Nwankwo",
     image: (
       <Image
-        src={require(`../public/images/recent/with_Trophies.jpg`)}
+        src={require(`../public/images/with_Trophies.jpg`)}
         // height={100}
         alt="eventPicture"
         className=" w-full h-auto rounded-full"
@@ -158,7 +158,7 @@ export const events = [
       "Chiamaka with the National Women's champion and other dignitaries at the NCC 2024",
     image: (
       <Image
-        src={require(`../public/images/recent/chiamaka_dignitaries.jpg`)}
+        src={require(`../public/images/chiamaka_dignitaries.jpg`)}
         // height={100}
         alt="eventPicture"
         className=" w-full h-auto rounded-full"

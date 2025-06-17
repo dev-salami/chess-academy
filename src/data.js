@@ -289,7 +289,7 @@ export const courses = [
 export const testimonials = [
   {
     name: "Victor Nwankwo",
-    title: "OLCC junior chess player",
+    title: "Former National under 14 chess champion",
     text: "The online chess class boosted my strategy understanding and confidence with expert instruction and clear explanations. It's a game-changer!",
     image: (
       <Image
@@ -323,7 +323,7 @@ export const testimonials = [
   },
   {
     name: "Fadhlullah AbdulRaheem",
-    title: "OLCC Master chess player",
+    title: "Chess Enthusiast",
     text: `I used to think that maybe chess wasn't for me because I could never really understand what was happening in the game, even after understanding how the pieces moved. Training with coach AbdulRahman these past few months have changed my view drastically and made me feel like, soon enough, I'll be going to competitions. My rating, which was roughly 1000 is now 1800+. I believe his explanations and the way he made me start looking at chess has helped me greatly`,
     image: "",
     //  (

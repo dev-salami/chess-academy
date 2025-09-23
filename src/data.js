@@ -12,7 +12,7 @@ export const tutors = [
       "Winner of the CPAN C4 Chevron Chess Challenge 2018",
       "Winner of National Friends Of Chess 2018",
       "Certified Lawyer",
-      "2283 peak rating",
+      "2331 peak rating",
     ],
     image: (
       <Image

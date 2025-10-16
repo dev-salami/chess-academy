@@ -70,7 +70,7 @@ function Footer() {
           <div>
             <div className="gap-4 my-2 hidden md:flex justify-center ">
               <a
-                href=""
+                href="https://www.instagram.com/movingtchess?igsh=MTg2NTkwc2tseW5oOA=="
                 className="  flex rounded-full bg-white items-center justify-center text-[#0B0804]"
               >
                 <FaSquareInstagram size={25} />

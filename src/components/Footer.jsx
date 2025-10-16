@@ -24,34 +24,34 @@ function Footer() {
           <div className="flex flex-col gap-6 justify-center items-center">
             <Image alt="Logo" src={logo} height={100} width={100}></Image>
             <div>
-              <div className="gap-4 my-2 flex justify-center">
+              <div className="gap-4 my-2 flex md:hidden justify-center ">
                 <a
                   href="https://www.instagram.com/movingtchess?igsh=MTg2NTkwc2tseW5oOA=="
-                  className="flex rounded-full bg-white items-center justify-center text-[#0B0804]"
+                  className="  flex rounded-full bg-white items-center justify-center text-[#0B0804]"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaSquareInstagram size={25} />
                 </a>
                 <a
-                  href="https://www.facebook.com/your-facebook-page"
-                  className="flex rounded-full bg-white items-center justify-center text-[#0B0804]"
+                  href=" "
+                  className="  flex rounded-full bg-white items-center justify-center text-[#0B0804]"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaFacebook size={25} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/your-linkedin-profile"
-                  className="flex rounded-full bg-white items-center justify-center text-[#0B0804]"
+                  href=" "
+                  className="  flex rounded-full bg-white items-center justify-center text-[#0B0804]"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaLinkedin size={25} />
                 </a>
                 <a
-                  href="https://www.facebook.com/your-facebook-page"
-                  className="flex rounded-full bg-white items-center justify-center text-[#0B0804]"
+                  href=" "
+                  className="  flex rounded-full bg-white items-center justify-center text-[#0B0804]"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -76,7 +76,40 @@ function Footer() {
             <a href="#event"> Contact</a>
           </div>
           <div>
-
+            <div className="gap-4 my-2 hidden md:flex justify-center ">
+              <a
+                href="https://www.instagram.com/movingtchess?igsh=MTg2NTkwc2tseW5oOA=="
+                className="  flex rounded-full bg-white items-center justify-center text-[#0B0804]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaSquareInstagram size={25} />
+              </a>
+              <a
+                href=" "
+                className="  flex rounded-full bg-white items-center justify-center text-[#0B0804]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook size={25} />
+              </a>
+              <a
+                href=" "
+                className="  flex rounded-full bg-white items-center justify-center text-[#0B0804]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin size={25} />
+              </a>
+              <a
+                href=" "
+                className="  flex rounded-full bg-white items-center justify-center text-[#0B0804]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <RiFacebookCircleLine size={25} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -85,5 +118,3 @@ function Footer() {
 }
 
 export default Footer;
-
-

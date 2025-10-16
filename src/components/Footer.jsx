@@ -23,33 +23,7 @@ function Footer() {
         <div className="grid gap-6 md:grid-cols-4 mb-12 ">
           <div className="flex flex-col gap-6 justify-center items-center">
             <Image alt="Logo" src={logo} height={100} width={100}></Image>
-            <div>
-              <div className="gap-4 my-2 flex md:hidden justify-center ">
-                <a
-                  href=""
-                  className="  flex rounded-full bg-white items-center justify-center text-[#0B0804]"
-                >
-                  <FaSquareInstagram size={25} />
-                </a>
-                <a
-                  href=" "
-                  className="  flex rounded-full bg-white items-center justify-center text-[#0B0804]"
-                >
-                  <FaFacebook size={25} />
-                </a>
-                <a
-                  href=" "
-                  className="  flex rounded-full bg-white items-center justify-center text-[#0B0804]"
-                >
-                  <FaLinkedin size={25} />
-                </a>
-                <a
-                  href=" "
-                  className="  flex rounded-full bg-white items-center justify-center text-[#0B0804]"
-                >
-                  <RiFacebookCircleLine size={25} />
-                </a>
-              </div>
+            <div>              
               <div className="flex text-center">
                 <span>TEL : </span>
                 <p>+2348084969784</p>
@@ -110,3 +84,5 @@ function Footer() {
 }
 
 export default Footer;
+
+

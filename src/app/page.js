@@ -8,6 +8,7 @@ import AboutUs from "@/components/home/About-Us";
 import Testimonial from "@/components/home/Testimonial";
 import Footer from "@/components/Footer";
 import Courses from "@/components/home/Courses";
+import QuizApp from "@/components/home/Quiz";
 // import Lenis from "@studio-freight/lenis";
 // import { useEffect } from "react";
 
@@ -43,6 +44,7 @@ export default function Home() {
       <Testimonial />
 
       <Footer />
+      {/* <QuizApp /> */}
     </div>
   );
 }

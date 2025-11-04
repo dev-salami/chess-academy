@@ -171,7 +171,7 @@ function QuizApp() {
                                   Ready for the next level?
                                 </h3>
                                 <p className="text-blue-700 text-sm mb-4">
-                                  You've unlocked the <strong>{nextSkill}</strong> questionnaire!
+                                  You have unlocked the <strong>{nextSkill}</strong> questionnaire!
                                 </p>
                                 <button
                                   onClick={async () => {

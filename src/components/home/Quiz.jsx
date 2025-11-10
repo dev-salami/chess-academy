@@ -67,6 +67,22 @@ function QuizApp() {
     }
   };
 
+  // Handle starting next questionnaire
+  const handleStartNextQuestionnaire = async () => {
+    try {
+      // Get the next questionnaire data from answerData
+      const nextQuestionnaire = answerData?.next_questionnaire;
+      if (nextQuestionnaire && nextQuestionnaire.first_question_id) {
+        await getQuestion(qtaker.id, nextQuestionnaire.first_question_id);
+        navigateToView('question');
+      } else {
+        console.error('No next questionnaire data available');
+      }
+    } catch (error) {
+      console.error('Error starting next questionnaire:', error);
+    }
+  };
+
   // Render error message
   if (error && currentView !== 'registration') {
     return (
@@ -84,6 +100,34 @@ function QuizApp() {
       </div>
     );
   }
+
+  // Calculate result data once for the result view
+  const resultData = (() => {
+    if (currentView !== "result") return null;
+    
+    const displayScore = answerData?.score ?? 0;
+    const totalQuestions = answerData?.total_questions ?? 'N/A';
+    const percentage = answerData?.percentage ?? 0;
+    const passed = answerData?.passed ?? false;
+    const currentSkill = answerData?.current_skill || 'beginner';
+    const nextSkill = answerData?.next_skill;
+    const nextQuestionnaire = answerData?.next_questionnaire;
+    const showJoinClassesMessage = !passed || (passed && !nextQuestionnaire);
+
+    console.log('Result Data:', answerData);
+    console.log('Current Skill (from API):', currentSkill);
+
+    return {
+      displayScore,
+      totalQuestions,
+      percentage,
+      passed,
+      currentSkill,
+      nextSkill,
+      nextQuestionnaire,
+      showJoinClassesMessage
+    };
+  })();
 
   // Render current view
   const renderCurrentView = () => {
@@ -129,23 +173,16 @@ function QuizApp() {
         );
 
       case "result":
-        // Safe data access with fallbacks
-        const displayScore = answerData?.score ?? 0;
-        const totalQuestions = answerData?.total_questions ?? 'N/A';
-        const percentage = answerData?.percentage ?? 0;
-        const passed = answerData?.passed ?? false;
-
-        // Use the new current_skill field from API
-        const currentSkill = answerData?.current_skill || 'beginner';
-        const nextSkill = answerData?.next_skill;
-        const nextQuestionnaire = answerData?.next_questionnaire;
-
-        // Debug logging
-        console.log('Result Data:', answerData);
-        console.log('Current Skill (from API):', currentSkill);
-
-        // Determine if we should show the "join classes" message
-        const showJoinClassesMessage = !passed || (passed && !nextQuestionnaire);
+        if (!resultData) return null;
+        
+        const { 
+          percentage, 
+          passed, 
+          currentSkill, 
+          nextSkill, 
+          nextQuestionnaire, 
+          showJoinClassesMessage 
+        } = resultData;
 
         return (
           <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 py-8 px-4 flex items-center justify-center">
@@ -192,14 +229,7 @@ function QuizApp() {
                       You have unlocked the <strong>{nextSkill}</strong> questionnaire!
                     </p>
                     <button
-                      onClick={async () => {
-                        try {
-                          await getQuestion(qtaker.id, nextQuestionnaire.first_question_id);
-                          navigateToView('question');
-                        } catch (error) {
-                          console.error('Error starting next questionnaire:', error);
-                        }
-                      }}
+                      onClick={handleStartNextQuestionnaire}
                       className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors"
                     >
                       Start {nextSkill} Questionnaire

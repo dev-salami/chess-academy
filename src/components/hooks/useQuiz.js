@@ -117,7 +117,6 @@ export const useQuiz = () => {
       setLoading(false);
     }
   }, []);
-
   const getResults = useCallback(async (qtakerId) => {
     try {
       setLoading(true);
@@ -127,8 +126,8 @@ export const useQuiz = () => {
       
       console.log('=== Results API Response ===');
       console.log('Full response:', data);
+      console.log('Current skill:', data.current_skill);
       console.log('Score:', data.score);
-      console.log('Total questions:', data.total_questions);
       console.log('Percentage:', data.percentage);
       console.log('Passed:', data.passed);
       console.log('Next skill:', data.next_skill);

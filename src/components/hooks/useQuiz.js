@@ -42,6 +42,7 @@ export const useQuiz = () => {
       const errorMessage = handleApiError(error);
       setError(errorMessage);
       throw new Error(errorMessage);
+      
     } finally {
       setLoading(false);
     }
@@ -154,12 +155,24 @@ export const useQuiz = () => {
   }, []);
 
   return {
-    ...state,
+    // State
+    currentView: state.currentView,
+    qtaker: state.qtaker,
+    currentQuestion: state.currentQuestion,
+    answerData: state.answerData,
+    score: state.score,
+    loading: state.loading,
+    error: state.error,
+    
+    // Actions
     createQtaker,
     getQuestion,
     submitAnswer,
     getAnswerDetails,
     getResults,
     navigateToView,
+    
+    // Setters
+    setError, // Now exported
   };
 };

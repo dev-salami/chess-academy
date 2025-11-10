@@ -151,13 +151,13 @@ function QuestionCard({ question, qtaker, onSubmitAnswer, isLoading }) {
 
           {/* Action Buttons */}
           <div className="flex justify-between items-center">
-            <button
+            {/* <button
               onClick={handleSkip}
               className="px-4 py-2 text-gray-600 hover:text-gray-800 font-medium text-sm"
               disabled={isLoading}
             >
               Skip Question
-            </button>
+            </button> */}
             
             <button
               onClick={handleSubmit}

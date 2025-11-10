@@ -42,6 +42,7 @@ export const useQuiz = () => {
       const errorMessage = handleApiError(error);
       setError(errorMessage);
       throw new Error(errorMessage);
+      
     } finally {
       setLoading(false);
     }
@@ -116,7 +117,6 @@ export const useQuiz = () => {
       setLoading(false);
     }
   }, []);
-
   const getResults = useCallback(async (qtakerId) => {
     try {
       setLoading(true);
@@ -126,8 +126,8 @@ export const useQuiz = () => {
       
       console.log('=== Results API Response ===');
       console.log('Full response:', data);
+      console.log('Current skill:', data.current_skill);
       console.log('Score:', data.score);
-      console.log('Total questions:', data.total_questions);
       console.log('Percentage:', data.percentage);
       console.log('Passed:', data.passed);
       console.log('Next skill:', data.next_skill);
@@ -154,12 +154,24 @@ export const useQuiz = () => {
   }, []);
 
   return {
-    ...state,
+    // State
+    currentView: state.currentView,
+    qtaker: state.qtaker,
+    currentQuestion: state.currentQuestion,
+    answerData: state.answerData,
+    score: state.score,
+    loading: state.loading,
+    error: state.error,
+    
+    // Actions
     createQtaker,
     getQuestion,
     submitAnswer,
     getAnswerDetails,
     getResults,
     navigateToView,
+    
+    // Setters
+    setError, // Now exported
   };
 };

@@ -5,7 +5,6 @@ import { IoRadioButtonOff, IoRadioButtonOn } from "react-icons/io5";
 import { API_BASE_URL } from '../../lib/api';
 
 function QuestionCard({ question, qtaker, onSubmitAnswer, isLoading }) {
-  if (!question) return null;
   const [selectedOption, setSelectedOption] = useState(null);
   const [textAnswer, setTextAnswer] = useState("");
   useEffect(() => {
@@ -13,6 +12,9 @@ function QuestionCard({ question, qtaker, onSubmitAnswer, isLoading }) {
     setSelectedOption(null);
   }, [question?.id]);
 
+  if (!question) return null;
+  
+  
   const handleOptionSelect = (optionId) => {
     setSelectedOption(optionId);
   };

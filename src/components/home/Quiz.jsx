@@ -12,6 +12,7 @@ function QuizApp() {
     qtaker,
     currentQuestion,
     answerData,
+    answerId,
     score,
     loading,
     error,
@@ -43,15 +44,18 @@ function QuizApp() {
   };
 
   // Handle answer submission
-  const handleSubmitAnswer = async (selectedOptionId) => {
+  const handleSubmitAnswer = async (answer) => {
     if (!qtaker || !currentQuestion) return;
-
+  
     try {
-      const data = await submitAnswer(qtaker.id, currentQuestion.id, selectedOptionId);
-      // Fetch answer details
-      await getAnswerDetails(qtaker.id, data.answer_id);
-    } catch (error) {
-      console.error('Failed to submit answer:', error);
+      // 1. submit – returns last_answer_id
+      const res = await submitAnswer(qtaker.id, currentQuestion.id, answer);
+      if (res.last_answer_id === undefined) throw new Error('Server did not return last_answer_id');
+  
+      // 2. details – use the id from the response
+      await getAnswerDetails(qtaker.id, res.last_answer_id);
+    } catch (err) {
+      console.error('Submit / details failed:', err);
     }
   };
 

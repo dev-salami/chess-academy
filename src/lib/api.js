@@ -95,14 +95,13 @@ export const quizAPI = {
   },
 
   // Submit an answer
-  submitAnswer(qtakerId, questionId, selectedOptionId) {
-    return apiClient.post(`/quiz/${qtakerId}/${questionId}/`, {
-      options: selectedOptionId,
-    });
+  submitAnswer(qtakerId, questionId, payload) {
+    return apiClient.post(`/quiz/${qtakerId}/${questionId}/`, payload);
   },
 
   // Get answer details
   getAnswerDetails(qtakerId, answerId) {
+    // if (!answerId && answerId !== 0) throw new Error('answerId required');
     return apiClient.get(`/answer/${qtakerId}/${answerId}/`);
   },
 
